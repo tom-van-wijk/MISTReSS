@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+<Vntrs Serovar="enteritidis">
+	<Vntr MaxCount="4" MinCount="1" Name="SENTR7" RepLength="9">
+		<Bins MapID="EnteritidisMLVA Enteritidis">
+			<Bin Length="117" Start="114.0" Stop="120.0" Value="1"/>
+			<Bin Length="126" Start="123.0" Stop="129.0" Value="2"/>
+			<Bin Length="135" Start="132.0" Stop="138.0" Value="3"/>
+			<Bin Length="144" Start="141.0" Stop="147.0" Value="4"/>
+		</Bins>
+	</Vntr>
+	<Vntr MaxCount="21" MinCount="4" Name="SENTR5" RepLength="6">
+		<Bins MapID="EnteritidisMLVA Enteritidis">
+			<Bin Length="235" Start="233.0" Stop="237.0" Value="4"/>
+			<Bin Length="241" Start="239.0" Stop="243.0" Value="5"/>
+			<Bin Length="247" Start="245.0" Stop="249.0" Value="6"/>
+			<Bin Length="253" Start="251.0" Stop="255.0" Value="7"/>
+			<Bin Length="259" Start="257.0" Stop="261.0" Value="8"/>
+			<Bin Length="265" Start="263.0" Stop="267.0" Value="9"/>
+			<Bin Length="271" Start="269.0" Stop="273.0" Value="10"/>
+			<Bin Length="277" Start="275.0" Stop="279.0" Value="11"/>
+			<Bin Length="283" Start="281.0" Stop="285.0" Value="12"/>
+			<Bin Length="289" Start="287.0" Stop="291.0" Value="13"/>
+			<Bin Length="295" Start="293.0" Stop="297.0" Value="14"/>
+			<Bin Length="301" Start="299.0" Stop="303.0" Value="15"/>
+			<Bin Length="307" Start="305.0" Stop="307.0" Value="16"/>
+			<Bin Length="313" Start="311.0" Stop="315.0" Value="17"/>
+			<Bin Length="319" Start="317.0" Stop="321.0" Value="18"/>
+			<Bin Length="325" Start="323.0" Stop="327.0" Value="19"/>
+			<Bin Length="331" Start="329.0" Stop="333.0" Value="20"/>
+			<Bin Length="337" Start="335.0" Stop="339.0" Value="21"/>
+		</Bins>
+	</Vntr>
+	<Vntr MaxCount="14" MinCount="1" Name="SENTR6" RepLength="7">
+		<Bins MapID="EnteritidisMLVA Enteritidis">
+			<Bin Length="159" Start="157.0" Stop="161.0" Value="1"/>
+			<Bin Length="166" Start="164.0" Stop="168.0" Value="3"/>
+			<Bin Length="173" Start="171.0" Stop="175.0" Value="4"/>
+			<Bin Length="180" Start="178.0" Stop="182.0" Value="5"/>
+			<Bin Length="187" Start="185.0" Stop="189.0" Value="6"/>
+			<Bin Length="194" Start="192.0" Stop="196.0" Value="7"/>
+			<Bin Length="201" Start="199.0" Stop="203.0" Value="8"/>
+			<Bin Length="208" Start="206.0" Stop="210.0" Value="9"/>
+			<Bin Length="215" Start="213.0" Stop="217.0" Value="10"/>
+			<Bin Length="222" Start="220.0" Stop="224.0" Value="11"/>
+			<Bin Length="229" Start="227.0" Stop="231.0" Value="12"/>
+			<Bin Length="236" Start="234.0" Stop="238.0" Value="13"/>
+			<Bin Length="243" Start="241.0" Stop="245.0" Value="14"/>
+		</Bins>
+	</Vntr>
+	<Vntr MaxCount="14" MinCount="1" Name="SENTR4" RepLength="7">
+		<Bins MapID="EnteritidisMLVA Enteritidis">
+			<Bin Length="98" Start="96.0" Stop="100.0" Value="1"/>
+			<Bin Length="105" Start="103.0" Stop="107.0" Value="2"/>
+			<Bin Length="112" Start="110.0" Stop="114.0" Value="3"/>
+			<Bin Length="119" Start="117.0" Stop="121.0" Value="4"/>
+			<Bin Length="126" Start="124.0" Stop="128.0" Value="5"/>
+			<Bin Length="133" Start="131.0" Stop="135.0" Value="6"/>
+			<Bin Length="140" Start="138.0" Stop="142.0" Value="7"/>
+			<Bin Length="147" Start="145.0" Stop="149.0" Value="8"/>
+			<Bin Length="154" Start="152.0" Stop="156.0" Value="9"/>
+			<Bin Length="161" Start="159.0" Stop="163.0" Value="10"/>
+			<Bin Length="168" Start="166.0" Stop="170.0" Value="11"/>
+			<Bin Length="175" Start="173.0" Stop="177.0" Value="12"/>
+			<Bin Length="182" Start="180.0" Stop="184.0" Value="13"/>
+			<Bin Length="189" Start="187.0" Stop="191.0" Value="14"/>
+		</Bins>
+	</Vntr>
+	<Vntr MaxCount="2" MinCount="1" Name="SE3" RepLength="12">
+		<Bins MapID="EnteritidisMLVA Enteritidis">
+			<Bin Length="308" Start="304" Stop="312.0" Value="1"/>
+			<Bin Length="320" Start="316.0" Stop="324.0" Value="2"/>
+		</Bins>
+	</Vntr>
+</Vntrs>
