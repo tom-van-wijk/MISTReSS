@@ -1,8 +1,8 @@
 # MISTReSS: MLVA In Silico Typing Resource for Salmonella Strains
 
 **Licence:      GNU General Public License v3.0 (copy provided in directory)**<br />
-# Author:       Tom van Wijk - RIVM Bilthoven<br />
-# Contact:      tom_van_wijk@hotmail.com / tom.van.wijk@rivm.nl<br />
+Author:       Tom van Wijk - RIVM Bilthoven<br />
+Contact:      tom_van_wijk@hotmail.com / tom.van.wijk@rivm.nl<br />
 
 ### DESCRIPTION
 
@@ -36,7 +36,15 @@ Start the script with the following command:
 
 -	**'inputfile':** Location of input file. This should be a fully
 	assembled Salmonella Enteritidis or Typhimurium
-	genome in .fasta format.
+	genome in .fasta format. To correctly determine the number of repeats,
+	it is crucial to assemble your genome as accurate as possible.
+	We recommend using the method in our paper: quality trim the fastq files
+	with q=25 using erne-filter v2.1.1 and assemble with SPAdes v 3.10.0.<br/>
+	When a tandem repeat is so long that it can not be covered by a simgle read,
+	the assembly with problably compress the tandem repeat. When using
+	illumina 2x150 bp, this will happen when SENTR5 n>13 and SENTR6 n>11. These
+	are very rare but to also type these longer genotypes correctly, we
+	recommend using illumina 2x250 bp.
 
 -	**'pathogen':** The serovar of the input strain. Currently, only
 	"enteritidis" is supported.<br />
