@@ -7,7 +7,7 @@ Contact:      tom_van_wijk@hotmail.com / tom.van.wijk@rivm.nl<br />
 #### DESCRIPTION
 
 Determines the Multi loci VNTR (Variable Number Tandem Repeat) type
-of a given Salmonella Enteritidis genome assembly
+of a given Salmonella Enteritidis genome assembly.
 
 #### REQUIREMENTS
 
@@ -46,8 +46,7 @@ Start the script with the following command:
 	the assembly with problably compress the tandem repeat by assembling
 	multiple repeats as a single sequence. When using
 	illumina 2x150 bp, this will happen when SENTR5 n>13 and SENTR6 n>11. These
-	are very rare but to also type these longer genotypes correctly, we
-	recommend using illumina 2x250 bp.
+	are rare but to also type longer genotypes correctly, we recommend using illumina 2x250 bp.
 
 -	**'pathogen':** The serovar of the input strain. Currently, only
 	"enteritidis" is supported.<br />
@@ -56,7 +55,7 @@ Start the script with the following command:
 -	**'outputdir':** Location of output directory. If none is specified,
 	an output directory will be created in the parent directory of inputfile.
 
-## MULTI-MISTRESS
+## MULTI MISTReSS
 
 Added in this repository is `multi_mistress.py`.
 This script allows for large batches of data to be typed with a single command.
@@ -94,11 +93,13 @@ You can easily add your own pathogens to this tool by doing to following:<br />
 	The primers in this file are named with an `_P1` and `_P2` flag for forward and
 	reverse reads respectively. The names of the primers (without the `_P1` and `_P2` flags
 	need to be identical to the `vntr`'s `Name` value in `reference_files/panel_'your_pathogen_name'.xml`<br />
--	Now you can run mistress with using the **-s** flag. Use the value for this variable identical to your pathogens name
+-	Now you can run mistress or multi_mistress with using the **-s** flag.
+	Use the value for this variable identical to your pathogens name
 	in the panel and primer files.<br .><br />
+	
 **NOTE:** Please keep in mind that the VNTR sizes used in the classical methods might be biased.<br />
 Also keep in mind that when the size of the total VNTR comes close or exceeds the read size of the
 sequencing technology used, the VNTR is unlikely to have been assembled correctly.<br />
-Testing with a set of traditionally typed samples is highly recommended.
+Testing with a set of traditionally typed samples is highly recommended.<br /><br />
 	
 	
