@@ -36,7 +36,7 @@ Start the script with the following command:
 `mistress.py -i 'inputfile' -s 'pathogen' -o 'outputdir'`
 
 -	**'inputfile':** Location of input file. This should be a fully
-	assembled Salmonella Enteritidis or Typhimurium
+	assembled Salmonella Enteritidis genome.
 	genome in .fasta/.fsa/.fna/.fa format.<br />
 	**NOTE:** To correctly determine the number of repeats,
 	it is crucial to assemble your genome as accurate as possible.
@@ -76,12 +76,12 @@ Start multi_mistress with the following command:
 -	**'outputdir':**	location of output directory.<br />
 			If none is specified, an output directory will be created in input directory.
 
-## ADDING PATHOGENS
+## ADDING YOUR OWN PATHOGENS
 
 You can easily add your own pathogens to this tool by doing to following:<br />
 -	Add your pathogen as a new object to `reference_files/supported_pathogens.xml`<br />
--	Add a `reference_files/panel_'your_pathogen_name'.xml` file with the VNTR sizes for your pathogen<br />
-	**'your_pathogen_name'** in this file's filename, the `Serovar` variable of the `Vntrs` object
+-	Add a `reference_files/panel_'your_pathogen_name'.xml` file with the VNTR sizes for your pathogen.<br />
+	'**your_pathogen_name**' in this file's filename, the `Serovar` variable of the `Vntrs` object
 	in this file and the name of the added pathogen in `reference_files/supported_pathogens.xml`
 	all need to be indentical.<br />
 	This file also needs to be in the same format as the supplied panel file(s), including identical
@@ -91,7 +91,7 @@ You can easily add your own pathogens to this tool by doing to following:<br />
 	**'your_pathogen_name'** once again needs to be	need to be indentical.<br />
 	This file needs to be in the same format as the supplied primer file(s).
 	The primers in this file are named with an `_P1` and `_P2` flag for forward and
-	reverse reads respectively. The names of the primers (without the `_P1` and `_P2` flags
+	reverse primers respectively. The names of the primers (without the `_P1` and `_P2` flags
 	need to be identical to the `vntr`'s `Name` value in `reference_files/panel_'your_pathogen_name'.xml`<br />
 -	Now you can run mistress or multi_mistress with using the **-s** flag.
 	Use the value for this variable identical to your pathogens name
