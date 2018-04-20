@@ -18,7 +18,7 @@ of a given Salmonella Enteritidis genome assembly.
 -	ncbi BLAST 2.6.0+
 -	The reference directory supplied with this repository
 
-### INSTALLATION
+#### INSTALLATION
 
 -	clone the MISTReSS repository to the desired location on your system:<br />
 	`git clone https://github.com/Papos92/MISTReSS.git`
@@ -29,7 +29,7 @@ of a given Salmonella Enteritidis genome assembly.
 	`export MISTRESS_REF=/path/to/MISTReSS/reference_files`<br />
 	(it is recommended to add this command to your ~/.bashrc file)
 
-### USAGE
+#### USAGE
 
 Start the script with the following command:
 
@@ -46,7 +46,7 @@ Start the script with the following command:
 	the assembly with problably compress the tandem repeat by assembling
 	multiple repeats as a single sequence. When using
 	illumina 2x150 bp, this will happen when SENTR5 n>13 and SENTR6 n>11. These
-	are rare but to also type longer genotypes correctly, we recommend using illumina 2x250 bp.
+	are rare but to also type longer genotypes correctly, we recommend using at least illumina 2x250 bp for Salmonella Enteritidis.
 
 -	**'pathogen':** The serovar of the input strain. Currently, only
 	"enteritidis" is supported.<br />
@@ -79,20 +79,20 @@ Start multi_mistress with the following command:
 ## ADDING YOUR OWN PATHOGENS
 
 You can easily add your own pathogens to this tool by doing to following:<br />
--	Add your pathogen as a new object to `reference_files/supported_pathogens.xml`<br />
+-	Add a new 'Pathogen' element for the pathogen you want to add to `reference_files/supported_pathogens.xml`<br />
 -	Add a `reference_files/panel_'your_pathogen_name'.xml` file with the VNTR sizes for your pathogen.<br />
-	'**your_pathogen_name**' in this file's filename, the `Serovar` variable of the `Vntrs` object
-	in this file and the name of the added pathogen in `reference_files/supported_pathogens.xml`
+	'**your_pathogen_name**' in this file's filename, the `Serovar` attribute of the `Vntrs` element
+	in this file and the 'Name' element of the added 'Pathogen' element in `reference_files/supported_pathogens.xml`
 	all need to be indentical.<br />
-	This file also needs to be in the same format as the supplied panel file(s), including identical
-	object and variable names.<br />
+	This file is required to be in the same format as the supplied panel file(s), including identical
+	element and attribute names.<br />
 -	Add a `reference_files/primers_'your_pathogen_name'.fsa` file with the primers that are used
 	for your pathogen in the lab method<br />
 	**'your_pathogen_name'** once again needs to be	need to be indentical.<br />
 	This file needs to be in the same format as the supplied primer file(s).
 	The primers in this file are named with an `_P1` and `_P2` flag for forward and
-	reverse primers respectively. The names of the primers (without the `_P1` and `_P2` flags
-	need to be identical to the `vntr`'s `Name` value in `reference_files/panel_'your_pathogen_name'.xml`<br />
+	reverse primers respectively. The headers of the primer sequences (without the `_P1` and `_P2` flags
+	need to be identical to the element `vntr`'s `Name` attribute value in `reference_files/panel_'your_pathogen_name'.xml`<br />
 -	Now you can run mistress or multi_mistress with using the **-s** flag.
 	Use the value for this variable identical to your pathogens name
 	in the panel and primer files.<br .><br />
