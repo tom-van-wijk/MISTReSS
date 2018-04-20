@@ -82,24 +82,24 @@ You can easily add your own pathogens to this tool by doing to following:<br />
 -	Add a new 'Pathogen' element for the pathogen you want to add to `reference_files/supported_pathogens.xml`<br />
 -	Add a `reference_files/panel_'your_pathogen_name'.xml` file with the VNTR sizes for your pathogen.<br />
 	'**your_pathogen_name**' in this file's filename, the `Serovar` attribute of the `Vntrs` element
-	in this file and the 'Name' element of the added 'Pathogen' element in `reference_files/supported_pathogens.xml`
+	in this file and the `Name` element of the added `Pathogen` element in `reference_files/supported_pathogens.xml`
 	all need to be indentical.<br />
 	This file is required to be in the same format as the supplied panel file(s), including identical
 	element and attribute names.<br />
 -	Add a `reference_files/primers_'your_pathogen_name'.fsa` file with the primers that are used
-	for your pathogen in the lab method<br />
-	**'your_pathogen_name'** once again needs to be	need to be indentical.<br />
+	for your pathogen in the lab method.
+	**'your_pathogen_name'** once again needs to be	need to be indentical to the afore mentioned terminilogy.<br />
 	This file needs to be in the same format as the supplied primer file(s).
 	The primers in this file are named with an `_P1` and `_P2` flag for forward and
 	reverse primers respectively. The headers of the primer sequences (without the `_P1` and `_P2` flags
 	need to be identical to the element `vntr`'s `Name` attribute value in `reference_files/panel_'your_pathogen_name'.xml`<br />
 -	Now you can run mistress or multi_mistress with using the **-s** flag.
 	Use the value for this variable identical to your pathogens name
-	in the panel and primer files.<br .><br />
+	in the panel and primer files.<br />
 	
 **NOTE:** Please keep in mind that the VNTR sizes used in the classical methods might be biased.<br />
 Also keep in mind that when the size of the total VNTR comes close or exceeds the read size of the
-sequencing technology used, the VNTR is unlikely to have been assembled correctly.<br />
+sequencing technology used, the VNTR is unlikely to have been assembled correctly.
 Testing with a set of traditionally typed samples is highly recommended.<br /><br />
 	
 	
