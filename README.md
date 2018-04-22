@@ -88,13 +88,13 @@ You can easily add your own pathogens to this tool by doing to following:<br />
 	element and attribute names.<br />
 -	Add a `reference_files/primers_'your_pathogen_name'.fsa` file with the primers that are used
 	for your pathogen in the lab method.
-	**'your_pathogen_name'** once again needs to be	need to be indentical to the afore mentioned terminilogy.<br />
+	**'your_pathogen_name'** once again needs to be	need to be indentical to the afore mentioned terminology.
 	This file needs to be in the same format as the supplied primer file(s).
 	The primers in this file are named with an `_P1` and `_P2` flag for forward and
 	reverse primers respectively. The headers of the primer sequences (without the `_P1` and `_P2` flags
 	need to be identical to the element `vntr`'s `Name` attribute value in `reference_files/panel_'your_pathogen_name'.xml`<br />
 -	Now you can run mistress or multi_mistress with using the **-s** flag.
-	Use the value for this variable identical to your pathogens name
+	Use the value for this parameter that is identical to your pathogens name
 	in the panel and primer files.<br />
 	
 **NOTE:** Please keep in mind that the VNTR sizes used in the classical methods might be biased.<br />
