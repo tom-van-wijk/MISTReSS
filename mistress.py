@@ -61,6 +61,7 @@ import subprocess
 import re
 import random
 
+
 # Function to parse the command-line arguments
 # Returns a namespace with argument keys and values
 def parse_arguments(args, log):
@@ -185,6 +186,13 @@ def determine_length_vntr_number(vntr_name, vntr_seqsize, pathogen, log):
 	return('NA')
 
 
+# Function closes logger handlers
+def close_logger(log):
+        for handler in log.handlers:
+                handler.close()
+                log.removeFilter(handler)
+
+
 # MAIN function
 def main():
 	# create logger
@@ -222,6 +230,10 @@ def main():
 	with open(outdir+"/mistress_output.txt", "w") as outfile:
 		outfile.write(str(vntr_numbers).replace("[","").replace("]","").replace(", ","-").replace("'",""))
 	outfile.close()
+        # close logger handlers
+        log.info("\nClosing logger and finalising mistress.py")
+        close_logger(log)
+        # move logfile to output directory
 	os.system("mv "+str(logid)+"_mistress.log "+outdir+"/mistress.log")
 
 
