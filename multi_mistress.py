@@ -154,7 +154,7 @@ def main():
 	# TODO: add function to validate input, parameters etc.
 	# creating output directory
 	if args.output_dir == 'inputdir':
-		outdir = os.path.dirname(os.path.abspath(args.input_dir))+"/"+args.input_dir+"/multi_mistress_output"
+		outdir = os.path.abspath(args.input_dir)+"/multi_mistress_output"
 	else:
 		outdir = os.path.abspath(args.output_dir)
 	log.info("Creating output directory: "+outdir)

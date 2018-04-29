@@ -128,7 +128,7 @@ def parse_blastn_output(blast_results_file, reference_file, blastdb, pathogen, l
 			blast_results[line.split("\t")[0]]=str(line)
 	file.close
 	# iterate over reference file to extract most extreme primer loci boundaries,
-	# Is both primer loci available and on the same contig: extract sequence using blast
+	# If both primer loci available and on the same contig: extract sequence using blast
 	vntr_numbers = []
 	current_repeat = "NA"
 	with open(reference_file,  "r") as infile:
