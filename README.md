@@ -1,8 +1,8 @@
 # MISTReSS: MLVA In Silico Typing Resource for Salmonella Strains
 
 **Licence:      GNU General Public License v3.0 (copy provided in directory)**<br />
-Author:       Tom van Wijk - RIVM Bilthoven<br />
-Contact:      tom_van_wijk@hotmail.com / tom.van.wijk@rivm.nl<br />
+Author:       Tom van Wijk<br />
+Contact:      tom_van_wijk@hotmail.com<br />
 
 #### DESCRIPTION
 
