@@ -24,7 +24,7 @@
 ############################# INSTALLATION ##############################
 
 # - clone the MISTReSS repository to the desired location on your system:
-#   > git clone https://github.com/Papos92/MISTReSS.git
+#   > git clone https://github.com/tom-van-wijk/MISTReSS.git
 # - Add the location of the MISTReSS repository to you path variable:
 #   > export PATH=$PATH:/path/to/MISTReSS
 #   (it is recommended to add this command to your ~/.bashrc file
