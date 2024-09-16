@@ -21,7 +21,7 @@ of a given Salmonella Enteritidis genome assembly.
 #### INSTALLATION
 
 -	clone the MISTReSS repository to the desired location on your system:<br />
-	`git clone https://github.com/Papos92/MISTReSS.git`
+	`git clone https://github.com/tom-van-wijk/MISTReSS.git`
 -	Add the location of the MISTReSS repository to you path variable:<br />
 	`export PATH=$PATH:/path/to/MISTReSS`<br />
 	(it is recommended to add this command to your ~/.bashrc file)
